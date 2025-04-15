@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bebas Neue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Cinzel Decorative -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                cinzel: ['Cinzel Decorative', 'serif'],
+                bebas: ['Bebas Neue', 'sans-serif'],
+              },
+              colors: {
+                orange: '#F57304',
+                pink: '#CF0875',
+                beige: '#E4BFB4'
+              }
+            }
+          }
+        }
+      </script>
+
+    <link rel="stylesheet" href="index.css">
+    <title>Juliana + João = Julião</title>
+</head>
+
+<body class="bg-gradient-to-r from-orange to-pink">
+    <div class="flex flex-col m-[10px] items-center bg-beige p-5">
+      <div class="w-full background">
+        <div id="header" class="flex flex-row items-center mx-auto justify-around w-[80%] mt-20">
+            <span class="font-bebas text-[30px] text-beige">20 ABR</span>
+            <img class="w-[100px] h-[100px]" src="img/Flower.png" alt="">
+            <span class="font-bebas text-[30px] text-beige">Cwb</span>
+        </div>
+        <div class="flex flex-col font-cinzel mx-[25%] text-beige mt-40">
+            <span class="text-[70px]">João Pedro</span>
+            <span class="text-[70px] self-end">& Juliana</span>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
