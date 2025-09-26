@@ -1,3 +1,3 @@
 julianaejoao.love {
-    reverse_proxy web:8000
+    reverse_proxy juliao:8000
 }
