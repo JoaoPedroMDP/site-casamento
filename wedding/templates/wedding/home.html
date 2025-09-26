@@ -9,157 +9,149 @@
     <img class="w-full" src="{% static 'wedding/img/aliancanoivado.jpeg' %}" alt="João e Juliana feliz com a aliança de noivado!!!">
     <span class="bg-black opacity-[.50] z-10 absolute top-0 left-0 w-full h-full"></span>
   </div>
-  <div >
-    <div id="date" class="flex flex-col items-center text-center font-imperial justify-around py-5">
+  <div id="date" class="flex flex-col items-center text-center font-imperial justify-around py-5 m-10">
     <!-- Data -->
-      <div class="bg-pastelGreen">
-        <div class="flex flex-col items-center gap-5">
-          <img src="{% static 'wedding/img/Flowers.png' %}" alt="Flowers" class="w-[40%]">
-          <span class="text-[80px] leading-none">Save the Date</span>
-        </div>
-        <span class="text-[60px] leading-none">16 . 02 . 2026</span>
-        <div id="flex flex-col items-center countdown">
-          <div class="flex flex-row justify-center gap-5">
-            <div class="flex flex-row items-center gap-2">
-              <span id="countdown-days" class="text-[30px] font-bold">0</span>
-              <span class="text-[30px]">dias</span>
-            </div>
-            <div class="flex flex-row items-center gap-2">
-              <span id="countdown-hours" class="text-[30px] font-bold">0</span>
-              <span class="text-[30px]">horas</span>
-            </div>
+    <div class="bg-pastelGreen">
+      <div class="flex flex-col items-center gap-5">
+        <img src="{% static 'wedding/img/Flowers.png' %}" alt="Flowers" class="w-[40%]">
+        <span class="text-[80px] leading-none">Save the Date</span>
+      </div>
+      <span class="text-[60px] leading-none">16 . 02 . 2026</span>
+      <div id="flex flex-col items-center countdown">
+        <div class="flex flex-row justify-center gap-5">
+          <div class="flex flex-row items-center gap-2">
+            <span id="countdown-days" class="text-[30px] font-bold">0</span>
+            <span class="text-[30px]">dias</span>
           </div>
-          <div class="flex flex-row justify-center gap-5">
-            <div class="flex flex-row items-center gap-2">
-              <span id="countdown-minutes" class="text-[30px] font-bold">0</span>
-              <span class="text-[30px]">minutos</span>
-            </div>
-            <div class="flex flex-row items-center gap-2">
-              <span id="countdown-seconds" class="text-[30px] font-bold">0</span>
-              <span class="text-[30px]">segundos</span>
-            </div>
+          <div class="flex flex-row items-center gap-2">
+            <span id="countdown-hours" class="text-[30px] font-bold">0</span>
+            <span class="text-[30px]">horas</span>
           </div>
         </div>
-      </div>
-
-      <!-- Casal -->
-      <div id="couple" class="flex text-[47px] bg-pastelGreen flex-col font-cinzel h-[40vh] justify-center px-5 w-full">
-        <span class="text-center">João Pedro</span>
-        <div class="flex justify-evenly">
-          <span>&</span>
-          <span class="self-end">Juliana</span>
-        </div>
-      </div>
-  
-      <!-- Locais -->
-      <div id="places" class="flex flex-col items-center bg-pastelWhite p-9 gap-8">
-  
-        <div id="cerimony-place" class="flex flex-row items-center">
-          <div class="flex justify-center basis-1/3">
-            <img src="{% static 'wedding/img/janelas.png' %}">
+        <div class="flex flex-row justify-center gap-5">
+          <div class="flex flex-row items-center gap-2">
+            <span id="countdown-minutes" class="text-[30px] font-bold">0</span>
+            <span class="text-[30px]">minutos</span>
           </div>
-  
-          <div class="flex flex-col basis-2/3">
-            <p class="font-cinzel text-[12px] text-end font-bold">Cerimônia</p>
-            <p class="font-cinzel text-[22px] text-end">Igreja Adventista Água Verde</p>
-            <p class="font-cinzel text-[14px] text-end">R. João Antônio Xavier, 718 - Água Verde</p>
+          <div class="flex flex-row items-center gap-2">
+            <span id="countdown-seconds" class="text-[30px] font-bold">0</span>
+            <span class="text-[30px]">segundos</span>
           </div>
         </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- Casal -->
+  <div id="couple" class="flex text-[47px] bg-blue text-pastelWhite flex-col font-cinzel h-[40vh] justify-center px-5 w-full">
+    <span class="text-center">João Pedro</span>
+    <div class="flex justify-center">
+      <span class="self-end">& Juliana</span>
+    </div>
+  </div>
   
-        <div id="celebration-place" class="flex flex-row items-center">
-          <div class="flex flex-col basis-2/3">
-            <p class="font-cinzel text-[12px] text-start font-bold">Recepção</p>
-            <p class="font-cinzel text-[22px] text-start">Recanto Alicy</p>
-            <p class="font-cinzel text-[14px] text-start">R. Hermenegildo Soares Machado, 2954 - Roseira de São Sebastião, São José dos Pinhais - PR, 83070-250</p>
-          </div>
-          <div class="flex justify-center basis-1/3">
-            <img src="{% static 'wedding/img/janelas.png' %}">
-          </div>
-        </div>
+  <!-- Locais -->
+  <div id="places" class="flex flex-col items-center bg-pastelWhite p-10 gap-8">
+
+    <div id="cerimony-place" class="flex flex-row items-center">
+      <div class="flex justify-center basis-1/3">
+        <!-- <img src="{% static 'wedding/img/janelas.png' %}"> -->
       </div>
 
-      <!-- Outras infos -->
-      <div id="more-infos" class="flex flex-col items-center font-cinzel p-5 px-10 bg-pastelGreen text-start">
-        <h1 class="text-[30px] mb-2">O grande dia!</h1>
-
-        <div class="flex flex-col items-center">
-          <!-- <img class="mb-10" src="{% static 'wedding/img/viagem.png'%}" width="250"> -->
-          <h2 class="text-[36px]">Deslocamento</h2>
-          <p class="text-[22px] text-start font-lancelot leading-[1.1] mx-5">O local da cerimônia fica localizado no
-            bairro Água Verde, a 25 minutos de carro do local onde será o jantar. O trajeto de Uber costuma ser em torno
-            de 30 reais.</p>
-        </div>
-  
-        <div class="flex flex-col items-center">
-          <img class="mb-10" src="{% static 'wedding/img/viagem.png'%}" width="250">
-          <h2 class="text-[36px]">Estacionamento</h2>
-          <p class="text-[22px] text-start font-lancelot leading-[1.1] mx-5">Para quem vai se deslocar de carro, há
-            estacionamento gratuito na igreja (poucas vagas) e vagas na rua. No local da recepção há estacionamento
-        </div>
-  
+      <div class="flex flex-col basis-2/3">
+        <p class="font-cinzel text-[12px] text-end font-bold">Cerimônia</p>
+        <p class="font-cinzel text-[22px] text-end">Igreja Adventista Água Verde</p>
+        <p class="font-cinzel text-[14px] text-end">R. João Antônio Xavier, 718 - Água Verde</p>
       </div>
+    </div>
 
-      <!-- Schedule -->
-      <div id="schedule" class="flex flex-col items-center font-cinzel p-5 px-10 bg-pastelWhite text-start gap-5">
-        <h1 class="text-[45px] mb-10">Programação</h1>
-        <ul class="flex flex-col gap-2 font-lancelot text-[25px]">
-          <li><span class="font-cinzel text-[20px] font-bold mr-4">16:00</span>A cerimônia mais esperada</li>
-          <li><span class="font-cinzel text-[20px] font-bold mr-4">18:30</span>Recepção no Recanto Alicy</li>
-          <li><span class="font-cinzel text-[20px] font-bold mr-4">19:30</span>Jantar! Chegou a hora de acabarmos
-            com sua fome</li>
-          <li><span class="font-cinzel text-[20px] font-bold mr-4">00:00</span>Fim de festa!</li>
-        </ul>
-      </div>
-
-      <!-- FAQ -->
-      <div id="faq" class="flex flex-col items-center font-cinzel p-5 px-10 bg-pastelGreen text-start gap-5">
-        <h1 class="text-[45px] mb-10">Perguntas frequentes</h1>
-        <ul class="flex flex-col gap-10 text-[30px]">
-          <li>
-            <h2 class="font-bold font-lancelot text-[40px]">Qual o look ideal?</h2>
-            <p class="font-lancelot leading-[1.1]">Traje Passeio Completo. Pedimos que as mulheres <b>evitem</b> vestidos
-              na cor <b>rosa e laranja</b>, que estão na paleta de cores das madrinhas. Fevereiro é um mês quente, mas
-              Curitiba sempre nos surpreende...então separe uma sombrinha e um casaco em casos de emergência hehe</p>
-          </li>
-          <li>
-            <h2 class="font-bold font-lancelot text-[40px]">Até quando posso confirmar minha presença?</h2>
-            <p class="font-lancelot leading-[1.1]">Faremos algumas listas de confirmação até o casamento, mas o quanto antes
-              você puder responder, melhor :)</p>
-          </li>
-          <li>
-            <h2 class="font-bold font-lancelot text-[40px]">Como funciona a lista de presentes dos noivos?</h2>
-            <p class="font-lancelot leading-[1.1]">Nossa lista de presentes é virtual! Você pode escolher um item e fazer
-              o pagamento online que nós receberemos a notificação. Qualquer dúvida, pode nos perguntar!</p>
-          </li>
-        </ul>
-
-        <a href="https://www.finalfeliz.de/julianacordeiro-joao-pedromartins" class="rounded-xl bg-blue text-white font-bold p-5">Confira a lista aqui!</a>
-      </div>
-
-      <!-- Lucky ones -->
-      <div id="lucky-ones" class="flex flex-col items-center font-cinzel p-5 px-10 bg-pastelWhite text-start gap-5">
-        <h1 class="text-[45px] mb-10">Para quem não é de Curitiba</h1>
-        <ul class="flex flex-col gap-10 text-[30px]">
-          <li>
-            <h2 class="font-bold mb-5">Hospedagem</h2>
-            <ul class="flex flex-col gap-5">
-              <li class="font-lancelot leading-[1.1]">Hotel próximo a igreja: Hotel Moov, Go Inn, Bristol</li>
-            </ul>
-          </li>
-          <li>
-            <h2 class="font-bold mb-5">Lugares para visitar</h2>
-            <ul class="flex flex-col gap-5">
-              <li class="font-lancelot leading-[1.1]">Pizzaria Baggio</li>
-              <li class="font-lancelot leading-[1.1]">Italy Café da praça Osório (um de nossos lugares favoritos!)</li>
-              <li class="font-lancelot leading-[1.1]"><b>Panificadora Jauense</b> (Nosso primeiro encontro foi aqui, na
-                unidade do Batel!!!)</li>
-              <li class="font-lancelot leading-[1.1]">Cidadão do mundo</li>
-            </ul>
-          </li>
-        </ul>
+    <div id="celebration-place" class="flex flex-row items-center">
+      <div class="flex flex-col basis-2/3">
+        <p class="font-cinzel text-[12px] text-start font-bold">Recepção</p>
+        <p class="font-cinzel text-[22px] text-start">Recanto Alicy</p>
+        <p class="font-cinzel text-[14px] text-start">R. Hermenegildo Soares Machado, 2954 - Roseira de São Sebastião, São José dos Pinhais - PR, 83070-250</p>
       </div>
     </div>
   </div>
+
+  <!-- Outras infos -->
+  <div id="more-infos" class="flex flex-col items-center font-cinzel gap-10 p-10 bg-pastelGreen text-start">
+    <div class="flex flex-col items-center">
+      <h2 class="text-[40px]">Deslocamento</h2>
+      <p class="text-[22px] text-start font-lancelot leading-[1.1] mb-4">O local da cerimônia fica localizado no
+        bairro Água Verde, a 25 minutos de carro do local onde será o jantar. O trajeto de Uber costuma ser em torno
+        de 30 reais.</p>
+      <p class="text-[22px] text-start font-lancelot leading-[1.1]">Para quem vai se deslocar de carro, há
+          <b>estacionamento gratuito</b> na igreja <b>(poucas vagas)</b> e vagas na rua. No local da <b>recepção tem estacionamento</b></p>
+    </div>
+  </div>
+
+  <!-- Schedule -->
+  <div id="schedule" class="bg-[url({% static 'wedding/img/BlueFlowersBackground.png' %})] bg-cover flex flex-col items-center justify-center font-cinzel text-start gap-5 w-full">
+    <div class="bg-pastelGreen m-10 mx-0 p-5">
+      <h1 class="text-[45px]">Programação</h1>
+      <ul class="flex flex-col gap-2 font-lancelot text-[25px]">
+        <li><span class="font-cinzel text-[20px] font-bold mr-4">16:00</span>A cerimônia mais esperada</li>
+        <li><span class="font-cinzel text-[20px] font-bold mr-4">18:30</span>Recepção no Recanto Alicy</li>
+        <li><span class="font-cinzel text-[20px] font-bold mr-4">19:30</span>Jantar! Chegou a hora de acabarmos
+          com sua fome</li>
+        <li><span class="font-cinzel text-[20px] font-bold mr-4">00:00</span>Fim de festa!</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div id="faq" class="flex flex-col items-center font-cinzel p-5 px-10 mt-5 bg-pastelGreen text-start gap-5">
+    <ul class="flex flex-col items-center text-[22px]">
+      <li class="mb-10">
+        <h2 class="font-lancelot text-[40px] leading-none mb-2">Qual o look ideal?</h2>
+        <p class="font-lancelot leading-[1.1]">Traje Passeio Completo. Pedimos que as mulheres <b>evitem</b> vestidos
+          na cor <b>rosa e laranja</b>, que estão na paleta de cores das madrinhas. Fevereiro é um mês quente, mas
+          Curitiba sempre nos surpreende...então separe uma sombrinha e um casaco em casos de emergência hehe</p>
+      </li>
+      <li class="mb-2">
+        <h2 class="font-lancelot text-[40px] leading-none mb-2">Até quando posso confirmar minha presença?</h2>
+        <p class="font-lancelot leading-[1.1]">Faremos algumas listas de confirmação até o casamento, mas o quanto antes
+          você puder responder, melhor</p>
+      </li>
+      <a href="https://forms.gle/XTSjC2QCKAWUX2ZW8" class="rounded-xl bg-blue text-[16px] text-white font-bold p-5 mb-10">Confirme sua presença</a>
+      <li class="mb-10">
+        <h2 class="font-lancelot text-[40px] leading-none mb-2">Como funciona a lista de presentes dos noivos?</h2>
+        <p class="font-lancelot leading-[1.1]">Nossa lista de presentes é virtual! Você pode escolher um item e fazer
+          o pagamento online que nós receberemos a notificação. Qualquer dúvida, pode nos perguntar!</p>
+        </li>
+    </ul>
+
+    <a href="https://www.finalfeliz.de/julianacordeiro-joao-pedromartins" class="rounded-xl bg-blue text-white text-center font-bold p-5">Confira a lista de presentes aqui!</a>
+  </div>
+
+    <!-- Lucky ones -->
+    <div id="lucky-ones" class="flex flex-col items-center font-cinzel p-5 px-10 bg-pastelWhite text-start gap-5">
+      <h1 class="text-[40px] mb-10">Para quem não é de Curitiba</h1>
+      <ul class="flex flex-col gap-10 text-[30px]">
+        <li>
+          <h2 class="font-bold mb-5">Hospedagem</h2>
+          <ul class="flex flex-col gap-5">
+            <li class="font-lancelot leading-[1.1]">Hotel próximo a igreja: Hotel Moov, Go Inn, Bristol</li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="font-bold mb-5">Lugares para visitar</h2>
+          <ul class="flex flex-col gap-5">
+            <li class="font-lancelot leading-[1.1]">Pizzaria Baggio</li>
+            <li class="font-lancelot leading-[1.1]">Italy Café da praça Osório (um de nossos lugares favoritos!)</li>
+            <li class="font-lancelot leading-[1.1]"><b>Panificadora Jauense</b> (Nosso primeiro encontro foi aqui, na
+              unidade do Batel!!!)</li>
+              <li class="font-lancelot leading-[1.1]">Parque Barigui</li>
+              <li class="font-lancelot leading-[1.1]">Praça do Japão</li>
+              <li class="font-lancelot leading-[1.1]">Jardim Botânico</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <script>
     // Countdown
     const countdownDate = new Date("2026-02-16T16:00:00").getTime();
