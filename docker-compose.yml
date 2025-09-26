@@ -10,3 +10,15 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+
+  caddy:
+    container_name: caddy
+    image: caddy
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./caddy-config:/config
+      - ./caddy-data:/data
+      - ./Caddyfile:/etc/caddy/Caddyfile
