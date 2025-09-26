@@ -1,0 +1,29 @@
+{% extends 'wedding/base.html' %}
+
+{% block isgallery %} bg-darkGreen text-white {% endblock isgallery %}
+
+{% block content %}
+    <div class="h-screen w-screen flex justify-center">
+        <div class="bg-white bg-opacity-80 rounded-lg p-8 shadow-lg">
+            <h1 class="text-4xl font-bebas text-center mb-4">Galeria</h1>
+            <p class="text-lg font-bebas text-center mb-4">Você pode contribuir com esta galeria no dia do casamento!! Basta abrir uma conversa com o número X e enviar quantas fotos quiser!!</p>
+            <p class="text-md opacity-50 font-bebas text-center mb-4">Pedimos, é claro, que pondere sobre as imagens enviadas. Não faça o noivo ter que vir apagar fotos hem!!</p>
+            <div class="flex flex-row wrap gap-4">
+                {% for photo in photos %}
+                <div class="text-lg font-cinzel text-black mb-2">
+                    <div class="flex flex-col gap-4 align-start p-4 bg-pastelGreen rounded-2xl shadow-xl">
+                        <img src="{{ photo.image.url }}" alt="{{ photo.title }}" class="w-full h-auto rounded-lg">
+                        <h2 class="text-xl font-bold">{{ photo.title }}</h2>
+                        <p class="text-sm text-gray-700">Adicione uma descrição aqui se necessário.</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+<!-- 
+    image = models.ImageField(upload_to='photos/')
+    title = models.CharField(max_length=100) -->
+

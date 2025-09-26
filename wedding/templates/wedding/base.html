@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Cinzel Decorative -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Vai Corinthia! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Lancelot -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lancelot&display=swap" rel="stylesheet">
+
+    <!-- Imperial Script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['Cinzel Decorative', 'serif'],
+                        corinthia: ['Corinthia', 'serif'],
+                        lancelot: ['Lancelot', 'serif'],
+                        imperial: ['Imperial Script', 'serif']
+                    },
+                    colors: {
+                        pastelWhite: '#F9F0E7',
+                        pastelGreen: '#fffcf7',
+                        black: '#261e16',
+                        darkGreen: '#ae9d7f',
+                        blue: '#1c3b53'
+                    },
+                    animation: {
+                        heartbeat: 'heartbeat 1.5s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        heartbeat: {
+                            '0%, 15%, 30%': { transform: 'scale(1)' },
+                            '5%, 20%': { transform: 'scale(0.95)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html, body {
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>{% block title %} Juliana + João = Julião {% endblock title %}</title>
+
+    {% block styles %}{% endblock styles %}
+</head>
+<body>
+    {% block content %}{% endblock content %}
+    {% block scripts %}{% endblock scripts %}
+    <div id="floating-buttons" class="fixed right-0 bottom-0 flex flex-col gap-2 m-4 z-40 w-fit items-center p-1 justify-center">
+        <a href="{% url 'home' %}" class="rounded-full bg-pastelGreen p-4 aspect-square w-fit text-center shadow-xl active:scale-95 {% block ishome %}{% endblock ishome %}">
+            <i class="fa fa-home text-2xl transition-colors"></i>
+        </a>
+
+        <a href="{% url 'gallery' %}" class="rounded-full bg-pastelGreen p-4 aspect-square w-min text-center shadow-xl active:scale-95 {% block isgallery %}{% endblock isgallery %}">
+            <i class="fa fa-image text-2xl transition-colors"></i>
+        </a>
+    </div>
+</body>
+</html>
