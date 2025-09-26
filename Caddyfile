@@ -1,6 +1,6 @@
 julianaejoao.love {
     handle {
-      reverse_proxy back:8000
+      reverse_proxy web:8000
    }
 
 }
