@@ -6,6 +6,7 @@ class Guest(models.Model):
     email = models.EmailField()
     code = models.CharField(max_length=10, unique=True)
 
+
 class Photo(models.Model):
     image = models.ImageField(upload_to='photos/')
-    title = models.CharField(max_length=100)
+    title = models.CharField(max_length=100, blank=True)

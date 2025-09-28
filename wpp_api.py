@@ -2,8 +2,6 @@ import base64
 import queue
 import threading
 import time
-from typing import Dict, Optional
-
 import requests
 from requests.exceptions import ConnectionError
 
@@ -108,7 +106,7 @@ class WppApi:
 
         self.queue.put((phone_number, message))
         print(f"Mensagem para {phone_number} adicionada à fila. Total na fila: {self.queue.qsize()}")
-    
+
     def _queue_image(self, image_base64: str, phone_number: str, caption: str = ''):
         if self.lock_queue:
             print("Fila bloqueada, não é possível adicionar mensagens.")
